@@ -7,5 +7,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'ourFirstApp';
-  skills = ["HTML", "CSS", "JS", "ANGULAR"]
+  skills = ["HTML", "CSS", "JS", "ANGULAR", "SASS", "NODE JS"]
 }
