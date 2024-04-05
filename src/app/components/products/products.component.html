@@ -1,2 +1,51 @@
+
+
+<div class="form-group">
+    <label for="searchProduct">Search Product</label>
+    <input type="text" class="form-control"
+    (keyup)="onProductSearch($event)"
+    >
+</div>
+
+<hr>TWO WAY DATA BINDING....
+<hr>
+<div class="form-group">
+    <label for="searchProduct">Search Product</label>
+    <input type="text" class="form-control"
+    [(ngModel)]="searchedProduct"
+    >
+</div>
+
+
+
+<p class="alert alert-primary">
+    {{searchedProduct}}
+</p>
+
+<hr>####################################################################<hr>
+
+
+<button class="btn btn-primary" [disabled]='isDisable'
+(click)="updateCartStatus()"
+>Add Post</button>
+
+<button class="btn btn-danger ml-3"
+[disabled] ="noOfProductsAdded === 0"
+(click)="updatedProductsNumber()"
+>Remove Product</button>
+
+
+<p class="alert alert-info my-4">
+    {{cartProductStatus}}
+</p>
+
+<hr>####################################################################<hr>
 <app-product></app-product>
-<app-product></app-product>
+
+<!-- <div app-product>
+
+</div> -->
+
+<!-- <div class="app-product">
+
+</div> -->
